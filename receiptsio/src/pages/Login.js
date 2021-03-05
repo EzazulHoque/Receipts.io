@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { firebase } from "../firebase/config";
 import { Redirect } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ setUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
@@ -15,7 +15,8 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
-  const handleLogin = () => {
+  const handleLogin = (event) => {
+    event.preventDefault();
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -31,7 +32,7 @@ const Login = () => {
               return;
             }
             const user = firestoreDocument.data();
-            alert("Success");
+            setUser(user);
             setRedirect(true);
           })
           .catch((error) => {

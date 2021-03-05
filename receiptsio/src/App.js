@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import { firebase } from "./firebase/config";
 
 import NavBar from "./components/NavBar";
 import Pricing from "./pages/Pricing";
@@ -12,9 +13,24 @@ import UserHome from "./pages/UserHome";
 import Home from "./pages/Home";
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  const logout = (event) => {
+    event.preventDefault();
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        setUser(null);
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
+
   return (
     <Router>
-      <NavBar />
+      <NavBar user={user} logout={logout} />
       <Switch>
         <Route path="/pricing">
           <Pricing />
@@ -26,7 +42,7 @@ function App() {
           <AboutUs />
         </Route>
         <Route path="/login">
-          <Login />
+          <Login setUser={setUser} />
         </Route>
         <Route path="/register">
           <Register />
