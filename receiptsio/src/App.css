@@ -9,3 +9,7 @@
 .dropdown-toggle::after { 
   content: none; 
 } 
+
+.pad-10{
+  padding: 10%;
+}

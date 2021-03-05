@@ -59,7 +59,7 @@ function App() {
         Login
       </Nav.Link> */}
       <Nav.Link style={{color:"black"}} eventKey="3" href="/Login">
-       <button class="btn btn-outline-success btn-lg">Login</button>
+       <button class="btn btn-outline-primary btn-lg">Login</button>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
@@ -68,8 +68,21 @@ function App() {
       {/* End of Nav Container */}
       
       <div class="landing">
-
+        <div class="container">
+          <div class="pad-10">
+            <div align="center" class="h1 mt-5">
+            Transform your local business into a more <strong style={{color:"green"}}>greener environment</strong> by using digital receipts.
+            </div>
+            <div align="center" class="h4 mt-5">
+            Use professional receipt templates that follow the exact ‘traditional receipt structure’. Easy to use and done within minutes - try now for free!
+            </div>
+            <div align="center" class="mt-5">
+            <button type="button" class="btn btn-success btn-lg">Create My Receipt</button>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* End Of Landing */}
     </div>
   );
 }
