@@ -78,3 +78,54 @@ border-radius: 20px;
     box-sizing: border-box;
     border-radius: 20px;
     }
+
+    .iPhone{
+      position: relative;
+      width: 414px;
+      height: 814px;
+
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      border-radius: 20px;
+    }
+
+    .topBar{
+width: 380px;
+height: 126px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 25px;
+    }
+    .circle{
+width: 79px;
+height: 75px;
+border-radius: 100%;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+
+/* background-image: url("./pics/end.png"); */
+    }
+
+.dash{
+  width: 380px;
+height: 393px;
+
+background: #FAFAFA;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 25px;
+}
+
+.botNav{
+margin-top: 15%;  
+width: 380px;
+height: 65px;
+
+background: #F3F6F9;
+border: 1px solid #000000;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+border-radius: 15px;
+}

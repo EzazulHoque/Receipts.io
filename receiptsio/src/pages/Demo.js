@@ -21,7 +21,7 @@ const Demo = () =>
                     If you want to see the mobile App.
                     </div>
                     <div align="center" class="mt-1">
-                    <button align="center" class="btn btn-outline-dark btn-lg">Enter here</button>
+                    <a href="/mobileApp"><button align="center" class="btn btn-outline-dark btn-lg" href="/mobileApp">Enter here</button></a>
                     </div>
                 </div>
             </div>

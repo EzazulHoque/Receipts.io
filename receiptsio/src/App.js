@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import UserHome from "./pages/UserHome";
 import Home from "./pages/Home";
+import MobileApp from "./pages/MobileApp";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -46,6 +47,9 @@ function App() {
         </Route>
         <Route path="/register">
           <Register />
+        </Route>
+        <Route path="/mobileApp">
+          <MobileApp />
         </Route>
         <Route path="/user-home">
           <UserHome />
