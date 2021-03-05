@@ -48,7 +48,7 @@ const Login = ({ setUser }) => {
   } else {
     return (
       <div>
-        <form>
+        {/* <form>
           <label>
             Email:
             <br />
@@ -66,7 +66,40 @@ const Login = ({ setUser }) => {
           </label>
           <br />
           <button onClick={handleLogin}>Login</button>
-        </form>
+        </form> */}
+        <div class="container pad-10">
+          <div class="h1" style={{marginLeft:"25%"}}>Login</div>
+            <div align="center" class="login" style={{padding:"5%"}}>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div class="h4" style={{float:"left"}}>
+                Email
+                </div>
+                <input class="form-control" placeholder="Email" type="text" value={email} onChange={handleEmailChange} />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div class="h4" style={{float:"left"}}>
+                Password
+                </div>
+                <input
+                class="form-control"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={handlePasswordChange}/>              
+            </div>
+            </div>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div>
+                <button class="btn btn-outline-dark btn-lg" onClick={handleLogin}>Login</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
       </div>
     );
   }

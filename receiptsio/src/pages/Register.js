@@ -44,7 +44,7 @@ const Register = () => {
   } else {
     return (
       <div>
-        <form>
+        {/* <form>
           <label>
             Email:
             <br />
@@ -76,7 +76,53 @@ const Register = () => {
           </label>
           <br />
           <button onClick={registerUser}>Register</button>
-        </form>
+        </form> */}
+        <div class="container pad-10">
+          <div class="h1" style={{marginLeft:"25%"}}>Register</div>
+            <div align="center" class="register" style={{padding:"5%"}}>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div class="h4" style={{float:"left"}}>
+                Email
+                </div>
+                <input class="form-control" placeholder="Email" type="text" value={email} onChange={(event) => setEmail(event.target.value)} />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div class="h4" style={{float:"left"}}>
+                Password
+                </div>
+                <input
+                class="form-control"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}/>              
+            </div>
+            </div>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div class="h4" style={{float:"left"}}>
+                Confirm Password
+                </div>
+                <input
+                class="form-control"
+                type="password"
+                placeholder="Confirm Password"
+                value={confirm}
+                onChange={(event) => setConfirm(event.target.value)}/>              
+            </div>
+            </div>
+            <div class="row mt-3">
+              <div align="center" class="col">
+                <div>
+                <button class="btn btn-outline-dark btn-lg" onClick={registerUser}>Register</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
       </div>
     );
   }

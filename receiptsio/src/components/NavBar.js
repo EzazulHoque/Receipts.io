@@ -91,9 +91,12 @@ const NavBar = ({ user, logout }) => {
               </Nav.Link>
             ) : (
               <Nav.Link style={{ color: "black" }} eventKey="3" href="/Login">
-                <button class="btn btn-outline-success btn-lg">Login</button>
+                <button class="btn btn-outline-dark btn-lg">Login</button>
               </Nav.Link>
             )}
+            <Nav.Link style={{ color: "black" }} eventKey="3" href="/Register">
+                <button class="btn btn-outline-dark btn-lg">Register</button>
+              </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

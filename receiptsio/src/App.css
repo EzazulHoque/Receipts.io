@@ -54,3 +54,27 @@ border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 20px;
 }
+
+.login{
+  /* position: absolute; */
+  margin-left: 25%;
+  width: 360px;
+  padding: 15px;
+  height: 341px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  }
+
+  .register{
+    /* position: absolute; */
+    margin-left: 25%;
+    width: 360px;
+    padding: 15px;
+    height: 441px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
