@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { firebase } from "../firebase/config";
+import { Redirect } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ setUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [redirect, setRedirect] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -13,7 +15,8 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
-  const handleLogin = () => {
+  const handleLogin = (event) => {
+    event.preventDefault();
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -29,7 +32,8 @@ const Login = () => {
               return;
             }
             const user = firestoreDocument.data();
-            console.log(user);
+            setUser(user);
+            setRedirect(true);
           })
           .catch((error) => {
             alert(error);
@@ -39,25 +43,32 @@ const Login = () => {
         alert(error);
       });
   };
-
-  return (
-    <div>
-      <form>
-        <label>
-          Email:
+  if (redirect) {
+    return <Redirect to="/user-home" />;
+  } else {
+    return (
+      <div>
+        <form>
+          <label>
+            Email:
+            <br />
+            <input type="text" value={email} onChange={handleEmailChange} />
+          </label>
           <br />
-          <input type="text" value={email} onChange={handleEmailChange} />
-        </label>
-        <br />
-        <label>
-          Password:
+          <label>
+            Password:
+            <br />
+            <input
+              type="text"
+              value={password}
+              onChange={handlePasswordChange}
+            />
+          </label>
           <br />
-          <input type="text" value={password} onChange={handlePasswordChange} />
-        </label>
-        <br />
-        <button onClick={handleLogin}>Login</button>
-      </form>
-    </div>
-  );
+          <button onClick={handleLogin}>Login</button>
+        </form>
+      </div>
+    );
+  }
 };
 export default Login;

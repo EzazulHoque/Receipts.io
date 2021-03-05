@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-const NavBar = () => {
+const NavBar = ({ user, logout }) => {
   const [show, setShow] = useState(false);
   const showDropdown = (e) => {
     setShow(!show);
@@ -10,6 +10,7 @@ const NavBar = () => {
   const hideDropdown = (e) => {
     setShow(false);
   };
+
   return (
     <div class="nav-container">
       <Navbar
@@ -82,9 +83,17 @@ const NavBar = () => {
             <Link to="/about-us">About Us</Link> */}
           </Nav>
           <Nav style={{ fontSize: "20px" }}>
-            <Nav.Link style={{ color: "black" }} eventKey="3" href="/Login">
-              <button class="btn btn-outline-success btn-lg">Login</button>
-            </Nav.Link>
+            {user ? (
+              <Nav.Link style={{ color: "black" }} eventKey="3">
+                <button class="btn btn-outline-success btn-lg" onClick={logout}>
+                  Logout
+                </button>
+              </Nav.Link>
+            ) : (
+              <Nav.Link style={{ color: "black" }} eventKey="3" href="/Login">
+                <button class="btn btn-outline-success btn-lg">Login</button>
+              </Nav.Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
