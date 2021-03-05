@@ -218,14 +218,14 @@ const Pricing = () =>
     </div>
     {/* End of Container JESUS CHRIST! IT LOOKS LIKE A FUCKING STAIRCASE!!! */}
    <div style={{marginTop:"30%"}}>
-   <div class="container-fluid mt-5 pad-10">
-        <div class="h1 mt-5">
-        Dedicated Solutions
+    <div class="container-fluid mt-5 pad-10">
+            <div class="h1 mt-5">
+            Dedicated Solutions
+            </div>
+            <div class="h2 mt-3">
+            For enterprise clients and POS Software with special requirements, we can run a dedicated Receipts.io instance on a cluster in the Google Cloud Platform region of your choice. Contact us to learn more.
+            </div>
         </div>
-        <div class="h2 mt-3">
-        For enterprise clients and POS Software with special requirements, we can run a dedicated Receipts.io instance on a cluster in the Google Cloud Platform region of your choice. Contact us to learn more.
-        </div>
-    </div>
    </div>
 </div>;
 

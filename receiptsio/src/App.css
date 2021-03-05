@@ -44,3 +44,13 @@ border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 20px;
 }
+.demoAsk{
+position: absolute;
+width: 360px;
+padding: 15px;
+height: 321px;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 20px;
+}
