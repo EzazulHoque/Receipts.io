@@ -29,6 +29,7 @@ const Login = () => {
               return;
             }
             const user = firestoreDocument.data();
+            console.log(user);
           })
           .catch((error) => {
             alert(error);
@@ -43,7 +44,7 @@ const Login = () => {
     <div>
       <form>
         <label>
-          Username:
+          Email:
           <br />
           <input type="text" value={email} onChange={handleEmailChange} />
         </label>
@@ -54,7 +55,7 @@ const Login = () => {
           <input type="text" value={password} onChange={handlePasswordChange} />
         </label>
         <br />
-        <input type="submit" value="Login" onSubmit={handleLogin} />
+        <button onClick={handleLogin}>Login</button>
       </form>
     </div>
   );
