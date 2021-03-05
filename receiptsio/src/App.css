@@ -13,6 +13,9 @@
 .pad-10{
   padding: 10%;
 }
+.pad-5{
+  padding: 5%;
+}
 
 .secondSection{
   margin-top: 10%;
@@ -29,4 +32,15 @@
 
 .fifthSection{
   margin-top: 10%;
+}
+
+.pricing{
+position: absolute;
+width: 360px;
+padding: 15px;
+height: 621px;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 20px;
 }
