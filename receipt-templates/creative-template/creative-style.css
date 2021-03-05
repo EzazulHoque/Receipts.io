@@ -1,0 +1,385 @@
+.mediaViewInfo {
+    --web-view-name: creative;
+    --web-view-id: creative;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: creative;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#creative {
+    position: absolute;
+    width: 428px;
+    height: 926px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: creative;
+    --web-view-id: creative;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Path_2_h {
+    fill: url(#Path_2_h);
+}
+.Path_2_h {
+    overflow: visible;
+    position: absolute;
+    width: 428px;
+    height: 926px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_1 {
+    fill: rgba(255,255,255,1);
+}
+.Path_1 {
+    overflow: visible;
+    position: absolute;
+    width: 619.791px;
+    height: 242.894px;
+    left: -123.219px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#logo {
+    position: absolute;
+    width: 338px;
+    height: 117px;
+    left: 44px;
+    top: 15px;
+    overflow: visible;
+}
+#Trans_30496163693 {
+    left: 20.5px;
+    top: 179.178px;
+    position: absolute;
+    overflow: visible;
+    width: 151px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17.5px;
+    color: rgba(112,112,112,1);
+}
+#Date_10122020_1325 {
+    left: 20.5px;
+    top: 144.178px;
+    position: absolute;
+    overflow: visible;
+    width: 226px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    color: rgba(112,112,112,1);
+}
+#Rectangle_3 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 30px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_3 {
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 412px;
+    height: 420px;
+    left: 17px;
+    top: 291px;
+}
+#Rectangle_4 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 30px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4 {
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.09));
+    position: absolute;
+    overflow: visible;
+    width: 424px;
+    height: 222px;
+    left: 17px;
+    top: 291px;
+}
+#Eraser_w_cola_scent_2pk {
+    left: 44px;
+    top: 322px;
+    position: absolute;
+    overflow: visible;
+    width: 200px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#x1 {
+    left: 281px;
+    top: 322px;
+    position: absolute;
+    overflow: visible;
+    width: 21px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_280 {
+    left: 329px;
+    top: 322px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#Mechanical_pencil_lead_HB_05_m {
+    left: 44px;
+    top: 358px;
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#x1_s {
+    left: 281px;
+    top: 371px;
+    position: absolute;
+    overflow: visible;
+    width: 21px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_280_t {
+    left: 329px;
+    top: 373px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#ID1_In_3_ring_binder_white {
+    left: 44px;
+    top: 418px;
+    position: absolute;
+    overflow: visible;
+    width: 194px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#x2 {
+    left: 281px;
+    top: 418px;
+    position: absolute;
+    overflow: visible;
+    width: 21px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_560 {
+    left: 329px;
+    top: 418px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#CHANGE {
+    left: 44px;
+    top: 641px;
+    position: absolute;
+    overflow: visible;
+    width: 68px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_380 {
+    left: 329px;
+    top: 643px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#CASH {
+    left: 44px;
+    top: 610px;
+    position: absolute;
+    overflow: visible;
+    width: 45px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_1500 {
+    left: 329px;
+    top: 612px;
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#GST {
+    left: 44px;
+    top: 579px;
+    position: absolute;
+    overflow: visible;
+    width: 33px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#_125 {
+    left: 329px;
+    top: 581px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#TOTAL {
+    left: 44px;
+    top: 506px;
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: rgba(112,112,112,1);
+}
+#ID1120 {
+    left: 288px;
+    top: 506px;
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: rgba(112,112,112,1);
+}
+#Thank_you_for__your_purchase {
+    left: 32px;
+    top: 761px;
+    position: absolute;
+    overflow: visible;
+    width: 215px;
+    white-space: nowrap;
+    line-height: 40px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: HP Simplified;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1);
+}
+#QR_code {
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 261px;
+    top: 731px;
+    overflow: visible;
+}

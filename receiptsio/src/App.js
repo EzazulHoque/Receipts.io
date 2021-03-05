@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "./App.css";
 import fon from "./pics/fon.png";
+import hiw from "./pics/HIW.png";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -76,9 +77,7 @@ function App() {
                 </div>
               </NavDropdown>
 
-              <Nav.Link href="/features">Features</Nav.Link>
               <Nav.Link href="/pricing">Pricing</Nav.Link>
-              <Nav.Link href="/pricing">API</Nav.Link>
               <Nav.Link href="/demo">Demo</Nav.Link>
               <Nav.Link href="/aboutus">About Us</Nav.Link>
             </Nav>
@@ -146,7 +145,7 @@ function App() {
             </div>
             {/* Right */}
             <div class="col">
-              <img src={fon} />
+              <img src={fon} style={{ maxWidth: "100%" }} alt="Green" />
             </div>
           </div>
         </div>
@@ -157,6 +156,53 @@ function App() {
         <div class="container">
           <div align="center" class="h1">
             How does Receipts.io work?
+          </div>
+          <div class="container" style={{ marginTop: "10%" }}>
+            {/* <img src={hiw} style={{width:"50%"}}/> */}
+            <div class="row">
+              <div class="col">
+                <div class="h1">It is really easy to use.</div>
+                <div class="h3 mt-5">It is really easy to use.</div>
+                <div class="h3 mt-5">1. Trust me it is easy to use.</div>
+                <div class="h3 mt-5">2. For real it is easy to use.</div>
+              </div>
+              <div class="col">
+                <img src={hiw} style={{ width: "100%" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End of Third Section */}
+
+      <div class="fourthSection">
+        <div class="container pad-10" style={{ height: "100vh" }}>
+          <div
+            class="h1"
+            style={{ marginTop: "22%", color: "white" }}
+            align="center"
+          >
+            “How wonderful it is that nobody need wait a single moment before
+            starting to improve the world.” - Anne Frank
+          </div>
+        </div>
+      </div>
+      {/* End of Fourth Section */}
+
+      <div class="fifthSection">
+        <div class="container">
+          <div class="row">
+            <div class="col" style={{ padding: "3%" }}>
+              <div class="h1">
+                Let's start reducing the cutting down of trees and the excess
+                consumption of oil by using digital receipts
+              </div>
+            </div>
+            <div class="col">
+              <div class="h1" style={{ marginTop: "20%" }}>
+                Get Started for free.
+              </div>
+            </div>
           </div>
         </div>
       </div>
