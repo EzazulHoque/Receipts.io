@@ -78,7 +78,7 @@ function App() {
             Use professional receipt templates that follow the exact ‘traditional receipt structure’. Easy to use and done within minutes - try now for free!
             </div>
             <div align="center" class="mt-5">
-            <button type="button" class="btn btn-success btn-lg">Create My Receipt</button>
+            <button type="button" class="btn btn-success btn-lg">Create Receipt</button>
             </div>
           </div>
         </div>
@@ -110,7 +110,8 @@ function App() {
 
       <div class="thirdSection">
         <div class="container">
-
+          <div align="center" class="h1">How does Receipts.io work?</div>
+            
         </div>
       </div>
 
