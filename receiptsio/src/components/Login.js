@@ -26,6 +26,8 @@ const Login = () => {
           <br />
           <input type="text" value={password} onChange={handlePasswordChange} />
         </label>
+        <br />
+        <input type="submit" value="Login" />
       </form>
     </div>
   );
