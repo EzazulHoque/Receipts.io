@@ -1,1 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+.App{
+  /* background-color: #f3f3f3; */
+}
+.dropdown-toggle::after { 
+  content: none; 
+} 
