@@ -2,6 +2,7 @@
 import React,  { useState } from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import './App.css';
+import fon from './pics/fon.png'
 
 function App() {
   const [show, setShow] = useState(false);
@@ -59,7 +60,7 @@ function App() {
         Login
       </Nav.Link> */}
       <Nav.Link style={{color:"black"}} eventKey="3" href="/Login">
-       <button class="btn btn-outline-primary btn-lg">Login</button>
+       <button class="btn btn-outline-success btn-lg">Login</button>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
@@ -83,6 +84,36 @@ function App() {
         </div>
       </div>
       {/* End Of Landing */}
+
+      <div class="secondSection">
+        <div class="container">
+          <div class="row">
+          {/* Left */}
+            <div class="col">
+              <div class="h1">
+              Contribute to a <strong style={{color:"green"}}>greener environment</strong> by getting rid of <strong style={{color:"red"}}>paper reciepts</strong>
+              </div>
+                <div class="mt-5">
+                  <div class="h3">Paper reciepts contribute to 30% of the world's pollution.</div>
+                  <div class="h3 mt-3">3 million trees and 600,000 gallons of oil are used to make paper reciepts every year!</div>
+                  <div class="h3 mt-3">In this new era of financial technology, it’s essential for businesses to take advantage of this technology and move to a greener approach.</div>
+                </div>
+            </div>
+            {/* Right */}
+            <div class="col">
+            <img src={fon} />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Of Second Section */}
+
+      <div class="thirdSection">
+        <div class="container">
+
+        </div>
+      </div>
+
     </div>
   );
 }
