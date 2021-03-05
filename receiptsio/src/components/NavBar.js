@@ -74,9 +74,12 @@ const NavBar = () => {
               </div>
             </NavDropdown>
 
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/demo">Demo</Link>
-            <Link to="/about-us">About Us</Link>
+            <Nav.Link><Link style={{textDecoration:"none", color:"inherit"}} to="/pricing">Pricing</Link></Nav.Link>
+            {/* <Link to="/pricing">Pricing</Link> */}
+            <Nav.Link> <Link style={{textDecoration:"none", color:"inherit"}} to="/demo">Demo</Link></Nav.Link>
+            <Nav.Link><Link style={{textDecoration:"none", color:"inherit"}} to="/about-us">About Us</Link></Nav.Link>
+            {/* <Link to="/demo">Demo</Link>
+            <Link to="/about-us">About Us</Link> */}
           </Nav>
           <Nav style={{ fontSize: "20px" }}>
             <Nav.Link style={{ color: "black" }} eventKey="3" href="/Login">
