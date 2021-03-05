@@ -50,9 +50,7 @@ function App() {
                 </div>
       </NavDropdown>
       
-      <Nav.Link href="/features">Features</Nav.Link>
       <Nav.Link href="/pricing">Pricing</Nav.Link>
-      <Nav.Link href="/pricing">API</Nav.Link>
       <Nav.Link href="/demo">Demo</Nav.Link>
       <Nav.Link href="/aboutus">About Us</Nav.Link>
     </Nav>
