@@ -50,10 +50,8 @@ const Login = ({ setUser }) => {
       });
   };
 
-  if (user && user.userType === "Customer") {
-    return <Redirect to="/customerDashboard" />;
-  } else if (user && user.userType === "Business Personnel") {
-    return <Redirect to="/businessDashboard" />;
+  if (user) {
+    return <Redirect to="/" />;
   } else {
     return (
       <div>
