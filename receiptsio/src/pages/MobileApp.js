@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-} from "react-router-dom";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import Accounts from "../components/mobileApp/Accounts";
+import Receipt from "../components/mobileApp/Receipt";
 import ReceiptsList from "../components/mobileApp/ReceiptsList";
 import Rewards from "../components/mobileApp/Rewards";
 import Home from "../components/mobileApp/Home";
@@ -35,6 +30,9 @@ const MobileApp = () => {
             <Switch>
               <Route path={`${match.path}/receiptsList`}>
                 <ReceiptsList />
+              </Route>
+              <Route path={`${match.path}/receipt/:id`}>
+                <Receipt />
               </Route>
               <Route path={`${match.path}/rewards`}>
                 <Rewards />

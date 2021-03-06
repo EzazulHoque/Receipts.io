@@ -1,0 +1,10 @@
+.receipt-preview {
+  text-decoration: none;
+  color: black;
+}
+
+.receipt-preview:hover {
+  background: grey;
+  text-decoration: none;
+  color: black;
+}
