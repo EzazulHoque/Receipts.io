@@ -9,10 +9,7 @@ import Demo from "./pages/Demo";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import BusinessDashboard from "./pages/BusinessDashboard";
-import CustomerDashboard from "./pages/CustomerDashboard";
 import Home from "./pages/Home";
-import MobileApp from "./pages/MobileApp";
 
 import { UserContext } from "./Contexts";
 
@@ -39,7 +36,7 @@ function App() {
           <Route path="/pricing">
             <Pricing />
           </Route>
-          <Route path="/demo">
+          <Route path="/mobile-demo">
             <Demo />
           </Route>
           <Route path="/about-us">
@@ -50,24 +47,6 @@ function App() {
           </Route>
           <Route path="/register">
             <Register />
-          </Route>
-          {/*           <Route path="/mobileApp/rewards">
-            <MobileApp />
-          </Route>
-          <Route path="/mobileApp/receiptsLists">
-            <MobileApp />
-          </Route>
-          <Route path="/mobileApp/account">
-            <MobileApp />
-          </Route> */}
-          <Route path="/mobileApp">
-            <MobileApp />
-          </Route>
-          <Route path="/businessDashboard">
-            <BusinessDashboard />
-          </Route>
-          <Route path="/customerDashboard">
-            <CustomerDashboard />
           </Route>
           <Route path="/">
             <Home />

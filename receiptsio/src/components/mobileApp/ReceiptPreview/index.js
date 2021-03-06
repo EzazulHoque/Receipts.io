@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 import "./ReceiptPreview.css";
 
 const ReceiptPreview = ({ receipt }) => {
+  const match = useRouteMatch();
   return (
     <Link
-      to={"/mobileApp/receipt/" + receipt.transactionId}
+      to={`${match.url}/receipt/` + receipt.transactionId}
       className="receipt-preview"
     >
       <div class="smlRcp mt-4">

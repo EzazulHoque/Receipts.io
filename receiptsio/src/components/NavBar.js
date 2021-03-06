@@ -90,9 +90,9 @@ const NavBar = ({ logout }) => {
               {" "}
               <Link
                 style={{ textDecoration: "none", color: "inherit" }}
-                to="/demo"
+                to="/mobile-demo"
               >
-                Demo
+                Mobile Demo
               </Link>
             </Nav.Link>
             <Nav.Link>

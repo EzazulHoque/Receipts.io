@@ -15,7 +15,7 @@ const Receipt = () => {
   return (
     <div>
       <h1>Receipt</h1>
-      <Link to="/mobileApp">
+      <Link to="/mobile-demo">
         <button>Back</button>
       </Link>
     </div>

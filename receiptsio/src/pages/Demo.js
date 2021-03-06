@@ -1,32 +1,89 @@
 import React from "react";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
-const Demo = () => 
-<div>
-    <div class="container pad-10">
-        <div align="center" class="h1 mt-1 mb-5">Demo Apps</div>
-        <div class="row">
-            <div class="col">
-                <div class="demoAsk">
-                    <div align="center" class="h1 mt-4">
-                    If you are a Business Personnel.
-                    </div>
-                    <div align="center" class="mt-1">
-                    <button align="center" class="btn btn-outline-dark btn-lg">Enter here</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-            <div class="demoAsk">
-                    <div align="center" class="h1 mt-3">
-                    If you want to see the mobile App.
-                    </div>
-                    <div align="center" class="mt-1">
-                    <a href="/mobileApp"><button align="center" class="btn btn-outline-dark btn-lg" href="/mobileApp">Enter here</button></a>
-                    </div>
-                </div>
-            </div>
+import Accounts from "../components/mobileApp/Accounts";
+import Receipt from "../components/mobileApp/Receipt";
+import ReceiptsList from "../components/mobileApp/ReceiptsList";
+import Rewards from "../components/mobileApp/Rewards";
+import Home from "../components/mobileApp/Home";
+
+import hom from "../pics/homeButton.png";
+import rcp from "../pics/receiptButton.png";
+import rwd from "../pics/rewards.png";
+import act from "../pics/account.png";
+
+// Need these three routes that redirects to these pages
+// Rewards - mobileApp/Rewards
+// ReceiptLists - mobileApp/ReceiptsLists
+// Account - mobileApp/Account
+
+const Demo = () => {
+  const match = useRouteMatch();
+  return (
+    <div>
+      <div class="container pad-10">
+        <div align="center" class="h1 mb-3">
+          Mobile App
         </div>
+        <div align="center">
+          <div class="iPhone">
+            <Switch>
+              <Route path={`${match.path}/receiptsList`}>
+                <ReceiptsList />
+              </Route>
+              <Route path={`${match.path}/receipt/:id`}>
+                <Receipt />
+              </Route>
+              <Route path={`${match.path}/rewards`}>
+                <Rewards />
+              </Route>
+              <Route path={`${match.path}/accounts`}>
+                <Accounts />
+              </Route>
+              <Route path={`${match.path}`}>
+                <Home />
+              </Route>
+            </Switch>
+            <div class="botNav">
+              <div class="row">
+                <div class="col">
+                  <Link to={`${match.url}`}>
+                    <img
+                      src={hom}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+                <div class="col">
+                  <Link to={`${match.url}/receiptsList`}>
+                    <img
+                      src={rcp}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+                <div class="col">
+                  <Link to={`${match.url}/rewards`}>
+                    <img
+                      src={rwd}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+                <div class="col">
+                  <Link to={`${match.url}/accounts`}>
+                    <img
+                      src={act}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>;
-
+  );
+};
 export default Demo;
