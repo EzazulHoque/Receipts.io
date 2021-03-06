@@ -181,6 +181,15 @@
   box-sizing: border-box;
   border-radius: 25px;
 }
+
+.bigRcp{
+  width: 360px;
+  height: 528px;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
 .mon {
   width: 60px;
   border-radius: 5px;
@@ -203,6 +212,13 @@ border-radius: 15px; */
   height: 0px;
   left: 0px;
   top: 734px;
-
+  opacity: 0.9;
   border: 1px solid #000000;
+}
+.line {
+  top: 15px;
+  width: 90%;
+  opacity: .5;
+  height: 1px;
+  background: #000000;
 }
