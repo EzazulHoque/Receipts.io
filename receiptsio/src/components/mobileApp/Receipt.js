@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { firebase } from "../../firebase/config";
 import bc from "../../pics/bc.png";
 
-const Receipt = ({ receipt, setSelectedReceipt }) => {
+const Receipt = ({ receipt, setSelectedReceipt, items }) => {
   return (
     <div>
       <div class="bigRcp mt-5">
@@ -28,50 +29,31 @@ const Receipt = ({ receipt, setSelectedReceipt }) => {
               <div style={{ marginLeft: "20%" }} class="h6">
                 Description
               </div>
-              <div class="h6">Latte</div>
-              <div style={{ marginLeft: "25%" }} class="h6">
-                Cappuccino
-              </div>
-              <div style={{ marginLeft: "25%" }} class="h6">
-                Cheesecake
-              </div>
-              <div style={{ marginLeft: "25%" }} class="h6">
-                Croissant
-              </div>
+              {items.map((item) => (
+                <div style={{ marginLeft: "25%" }} class="h6">
+                  {item.description}
+                </div>
+              ))}
             </div>
             <div class="col">
               <div align="center" class="h6">
                 Quantity
               </div>
-              <div align="center" class="h6">
-                x1
-              </div>
-              <div align="center" class="h6">
-                x1
-              </div>
-              <div align="center" class="h6">
-                x1
-              </div>
-              <div align="center" class="h6">
-                x1
-              </div>
+              {items.map((item) => (
+                <div align="center" class="h6">
+                  {item.quantity}
+                </div>
+              ))}
             </div>
             <div class="col">
               <div align="center" class="h6">
                 Price{" "}
               </div>
-              <div align="center" class="h6">
-                $4.5
-              </div>
-              <div align="center" class="h6">
-                $4.5
-              </div>
-              <div align="center" class="h6">
-                $9
-              </div>
-              <div align="center" class="h6">
-                $5
-              </div>
+              {items.map((item) => (
+                <div align="center" class="h6">
+                  ${item.price}
+                </div>
+              ))}
             </div>
           </div>
           {/* Total Section */}
@@ -80,7 +62,7 @@ const Receipt = ({ receipt, setSelectedReceipt }) => {
               <div class="h3">Total</div>
             </div>
             <div class="col">
-              <div class="h3">$23</div>
+              <div class="h3">${receipt.total}</div>
             </div>
           </div>
         </div>

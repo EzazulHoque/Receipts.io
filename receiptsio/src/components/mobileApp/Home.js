@@ -7,33 +7,10 @@ import bc from "../../pics/bc.png";
 import ds from "../../pics/ds.png";
 import { firebase } from "../../firebase/config";
 
-const brunetti = {
-  logo: bc,
-  businessName: "Brunetti Carlton",
-  date: "05 Mar 2021",
-  transactionId: "B106",
-  total: 23,
-};
-
-const woolworths = {
-  logo: wl,
-  businessName: "Woolworths",
-  date: "04 Mar 2021",
-  transactionId: "83456",
-  total: 23.5,
-};
-
-const daiso = {
-  logo: ds,
-  businessName: "Daiso Japan",
-  date: "03 Mar 2021",
-  transactionId: "3049683456",
-  total: 14,
-};
-
 const Home = () => {
   const [demoReceipts, setDemoReceipts] = useState([]);
   const [selectedReceipt, setSelectedReceipt] = useState(null);
+  const [allItems, setAllItems] = useState(null);
 
   useEffect(() => {
     const func = async () => {
@@ -48,19 +25,29 @@ const Home = () => {
       } else {
         const receiptIds = doc.data().receipts;
         var receipts = [];
+        var tempAllItems = new Map();
         for (let i = 0; i < receiptIds.length; i++) {
           const receiptDoc = await firebase
             .firestore()
             .collection("receipts")
             .doc(receiptIds[i])
             .get();
-          if (!receiptDoc.exists) {
-            alert("Could not find receipt");
-            return;
+          const receipt = receiptDoc.data();
+          console.log(receipt);
+          receipts.push(receipt);
+          var tempItems = [];
+          for (let i = 0; i < receipt.items.length; i++) {
+            const itemDoc = await firebase
+              .firestore()
+              .collection("receiptItems")
+              .doc(receipt.items[i])
+              .get();
+            tempItems.push(itemDoc.data());
           }
-          receipts.push(receiptDoc.data());
+          tempAllItems.set(receipt.transactionId, tempItems);
         }
         setDemoReceipts(receipts);
+        setAllItems(tempAllItems);
       }
     };
     func();
@@ -71,6 +58,7 @@ const Home = () => {
       <Receipt
         receipt={selectedReceipt}
         setSelectedReceipt={setSelectedReceipt}
+        items={allItems.get(selectedReceipt.transactionId)}
       />
     );
   } else {
