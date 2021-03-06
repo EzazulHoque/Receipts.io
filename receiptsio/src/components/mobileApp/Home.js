@@ -10,7 +10,7 @@ const brunetti = {
   businessName: "Brunetti Carlton",
   date: "05 Mar 2021",
   transactionId: "B106",
-  total: 14.21,
+  total: 23,
 };
 
 const woolworths = {
@@ -18,7 +18,7 @@ const woolworths = {
   businessName: "Woolworths",
   date: "04 Mar 2021",
   transactionId: "83456",
-  total: 21.52,
+  total: 23.5,
 };
 
 const daiso = {
