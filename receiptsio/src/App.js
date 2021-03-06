@@ -9,7 +9,8 @@ import Demo from "./pages/Demo";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import UserHome from "./pages/UserDashboard";
+import BusinessDashboard from "./pages/BusinessDashboard";
+import CustomerDashboard from "./pages/CustomerDashboard";
 import Home from "./pages/Home";
 import MobileApp from "./pages/MobileApp";
 
@@ -62,8 +63,11 @@ function App() {
           <Route path="/mobileApp">
             <MobileApp />
           </Route>
-          <Route path="/userDashboard">
-            <UserHome />
+          <Route path="/businessDashboard">
+            <BusinessDashboard />
+          </Route>
+          <Route path="/customerDashboard">
+            <CustomerDashboard />
           </Route>
           <Route path="/">
             <Home />
