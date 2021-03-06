@@ -51,6 +51,15 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
+          {/*           <Route path="/mobileApp/rewards">
+            <MobileApp />
+          </Route>
+          <Route path="/mobileApp/receiptsLists">
+            <MobileApp />
+          </Route>
+          <Route path="/mobileApp/account">
+            <MobileApp />
+          </Route> */}
           <Route path="/mobileApp">
             <MobileApp />
           </Route>

@@ -1,27 +1,91 @@
 import React from "react";
-import end from '../pics/end.png';
-const MobileApp = () => 
-<div>
-    <div class="container pad-10">
-        <div align="center" class="h1 mb-3">Mobile App</div>
-            <div align="center">
-                <div class="iPhone">
-                    <div class="topBar mt-5">
-                        <div class="h2 mt-5" style={{float:"left", marginLeft:"5%"}}>Hello Ezaz!</div>
-                        <div class="circle mt-4" style={{float:"right", marginRight:"5%"}}><img src={end} style={{width:"79px"}} /></div>
-                    </div>
-                    <div class="h1 mt-5" style={{marginRight:"35%"}}>
-                    Dashboard
-                    </div>
-                    <div class="dash">
-                    {/* This is where users will be able to scroll through receipts */}
-                    </div>
-                    <div class="botNav">
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+} from "react-router-dom";
 
-                    </div>
+import Accounts from "../components/mobileApp/Accounts";
+import ReceiptsList from "../components/mobileApp/ReceiptsList";
+import Rewards from "../components/mobileApp/Rewards";
+import Home from "../components/mobileApp/Home";
+
+import hom from "../pics/homeButton.png";
+import rcp from "../pics/receiptButton.png";
+import rwd from "../pics/rewards.png";
+import act from "../pics/account.png";
+
+// Need these three routes that redirects to these pages
+// Rewards - mobileApp/Rewards
+// ReceiptLists - mobileApp/ReceiptsLists
+// Account - mobileApp/Account
+
+const MobileApp = () => {
+  const match = useRouteMatch();
+  return (
+    <div>
+      <div class="container pad-10">
+        <div align="center" class="h1 mb-3">
+          Mobile App
+        </div>
+        <div align="center">
+          <div class="iPhone">
+            <Switch>
+              <Route path={`${match.path}/receiptsList`}>
+                <ReceiptsList />
+              </Route>
+              <Route path={`${match.path}/rewards`}>
+                <Rewards />
+              </Route>
+              <Route path={`${match.path}/accounts`}>
+                <Accounts />
+              </Route>
+              <Route path={`${match.path}`}>
+                <Home />
+              </Route>
+            </Switch>
+            <div class="botNav">
+              <div class="row">
+                <div class="col">
+                  <Link to={`${match.url}`}>
+                    <img
+                      src={hom}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
                 </div>
+                <div class="col">
+                  <Link to={`${match.url}/receiptsList`}>
+                    <img
+                      src={rcp}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+                <div class="col">
+                  <Link to={`${match.url}/rewards`}>
+                    <img
+                      src={rwd}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+                <div class="col">
+                  <Link to={`${match.url}/accounts`}>
+                    <img
+                      src={act}
+                      style={{ width: "48px", marginTop: "20%" }}
+                    />
+                  </Link>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>;
-
+  );
+};
 export default MobileApp;
