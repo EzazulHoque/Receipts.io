@@ -96,6 +96,7 @@ const Home = () => {
           {/* Need another routung for the smaller receipts */}
           {demoReceipts.map((receipt) => (
             <ReceiptPreview
+              key={receipt.transactionId}
               receipt={receipt}
               setSelectedReceipt={setSelectedReceipt}
             />

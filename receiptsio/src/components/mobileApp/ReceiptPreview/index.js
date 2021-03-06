@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { firebase } from "../../../firebase/config";
 
 const ReceiptPreview = ({ receipt, setSelectedReceipt }) => {
+  const [imgUrl, setImgUrl] = useState("");
+
+  useEffect(() => {
+    const loadLogo = async () => {
+      const url = await firebase
+        .storage()
+        .ref()
+        .child("bc.png")
+        .getDownloadURL();
+      setImgUrl(url);
+    };
+    loadLogo();
+  }, []);
+
   return (
     <div class="smlRcp mt-4" onClick={() => setSelectedReceipt(receipt)}>
       <div class="row mt-3">
         <div class="col">
           <img
-            src={receipt.logo}
+            src={imgUrl}
+            alt="logo"
             style={{
               width: "92px",
               marginLeft: "20%",
