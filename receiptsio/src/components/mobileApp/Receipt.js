@@ -11,6 +11,7 @@ const brunetti = {
 };
 
 const Receipt = () => {
+  console.log(brunetti.logo);
   const transactionId = useParams();
   return (
     <div>
