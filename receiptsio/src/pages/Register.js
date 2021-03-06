@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { firebase } from "../firebase/config";
+import Select from "react-select";
 import SwitchComponent from "../components/SwitchComponent";
+
+const options = [
+  { value: "woolworths", label: "Woolworths" },
+  { value: "coles", label: "Coles" },
+  { value: "aldi", label: "ALDI" },
+];
 
 const Register = () => {
   const [userType, setUserType] = useState("Customer");
@@ -61,13 +68,8 @@ const Register = () => {
                   <div class="h4" style={{ float: "left" }}>
                     Business Name
                   </div>
-                  <input
-                    class="form-control"
-                    placeholder="Full Name"
-                    type="text"
-                    value={businessName}
-                    onChange={(event) => setFullName(event.target.value)}
-                  />
+                  <br />
+                  <Select options={options} />
                 </div>
               </div>
             )}
