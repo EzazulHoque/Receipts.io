@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { firebase } from "../firebase/config";
+import SwitchComponent from "../components/SwitchComponent";
 
 const Register = () => {
+  const [userType, setUserType] = useState("Customer");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,6 +53,7 @@ const Register = () => {
             Register
           </div>
           <div align="center" class="register" style={{ padding: "5%" }}>
+            <SwitchComponent option1="Customer" option2="Business Personnel" />
             <div class="row mt-3">
               <div align="center" class="col">
                 <div class="h4" style={{ float: "left" }}>
