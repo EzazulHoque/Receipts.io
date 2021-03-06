@@ -32,22 +32,41 @@ const daiso = {
 
 const Home = () => {
   const [demoReceipts, setDemoReceipts] = useState([]);
+
   useEffect(() => {
-    const docRef = firebase
-      .firestore()
-      .collection("users")
-      .doc("ISglKE3x0QcfiOZPpxYI42C6Ujm2");
-    docRef.get().then((doc) => {
+    const func = async () => {
+      const doc = await firebase
+        .firestore()
+        .collection("users")
+        .doc("ISglKE3x0QcfiOZPpxYI42C6Ujm2")
+        .get();
       if (!doc.exists) {
-        alert("No such document");
+        alert("Could not find user");
+        return;
       } else {
         const receiptIds = doc.data().receipts;
-        const receiptsRef = firebase.firestore().collection("receipts");
         var receipts = [];
-        for (let i = 0; i < receiptIds.length; i++) {}
+        for (let i = 0; i < receiptIds.length; i++) {
+          const receiptDoc = await firebase
+            .firestore()
+            .collection("receipts")
+            .doc(receiptIds[i])
+            .get();
+          if (!receiptDoc.exists) {
+            alert("Could not find receipt");
+            return;
+          }
+          receipts.push(receiptDoc.data());
+        }
+        console.log(receipts);
+        setDemoReceipts(receipts);
       }
-    });
+    };
+
+    func();
   }, []);
+
+  console.log("Demo receipts", demoReceipts);
 
   return (
     <div>
