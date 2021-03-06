@@ -3,6 +3,7 @@ import { UserContext } from "../../Contexts";
 import { firebase } from "../../firebase/config";
 
 import ReceiptPreview from "../ReceiptPreview";
+import Receipt from "../Receipt";
 
 const Home = () => {
   const user = useContext(UserContext);
@@ -72,6 +73,12 @@ const Home = () => {
       <div class="container insideDash mt-4" style={{ marginLeft: "10%" }}>
         {loading ? (
           <div></div>
+        ) : selectedReceipt ? (
+          <Receipt
+            receipt={selectedReceipt}
+            setSelectedReceipt={setSelectedReceipt}
+            items={allItems.get(selectedReceipt.transactionId)}
+          />
         ) : (
           <div className="row">
             <div className="col">
