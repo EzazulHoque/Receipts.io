@@ -42,8 +42,7 @@ const Landing = () => {
               </div>
               <div class="mt-5">
                 <div class="h3">
-                  Paper reciepts contribute to 30% of the world's pollution.
-                </div>
+                Getting rid of paper receipts would save 12 billion pounds of carbon dioxide.                </div>
                 <div class="h3 mt-3">
                   3 million trees and 600,000 gallons of oil are used to make
                   paper reciepts every year!
