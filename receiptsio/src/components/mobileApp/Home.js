@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReceiptPreview from "../ReceiptPreview";
-import Receipt from "./Receipt";
+import Receipt from "../Receipt";
 import end from "../../pics/end.png";
 import { firebase } from "../../firebase/config";
 

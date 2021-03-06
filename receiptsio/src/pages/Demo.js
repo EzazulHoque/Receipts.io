@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import Accounts from "../components/mobileApp/Accounts";
-import Receipt from "../components/mobileApp/Receipt";
+import Receipt from "../components/Receipt";
 import ReceiptsList from "../components/mobileApp/ReceiptsList";
 import Rewards from "../components/mobileApp/Rewards";
 import Home from "../components/mobileApp/Home";
