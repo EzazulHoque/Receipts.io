@@ -27,7 +27,7 @@ const NavBar = ({ logout }) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto" style={{ fontSize: "20px" }}>
-            <NavDropdown
+            {/* <NavDropdown
               title="Reciepts"
               id="dropdown-basic"
               show={show}
@@ -64,18 +64,18 @@ const NavBar = ({ logout }) => {
                       </p>
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item style={{ borderRadius: "10px" }}>
+                    {/* <NavDropdown.Item style={{ borderRadius: "10px" }}>
                       {" "}
                       <h2>Modern</h2>
                       <p>
                         The new and trendy feeling of the forward-thinking{" "}
                         <br /> businesses in innovative fields
                       </p>
-                    </NavDropdown.Item>
-                  </div>
+                    </NavDropdown.Item> */}
+                  {/* </div>
                 </div>
               </div>
-            </NavDropdown>
+            </NavDropdown> */} 
 
             <Nav.Link>
               <Link

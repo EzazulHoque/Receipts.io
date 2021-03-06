@@ -8,7 +8,7 @@ const Pricing = () =>
             Pricing Plans
             </div>
             <div align="center" class="h5 mt-5">
-            Try our digital solution for for free, then choose to migrate to a plan that fits you.
+            Try our digital solution for for free, then choose to migrate to a plan that fits your needs.
             </div>
             <div class="mt-5">
                 <div class="row mt-5 pad-5">

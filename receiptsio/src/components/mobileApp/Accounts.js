@@ -14,7 +14,7 @@ const Accounts = () =>
         Hello Ezaz!
         </div>
         <div class="h2 mt-5">
-        <u>Scan a receipt</u>
+        <u>Scan a QR Code</u>
         </div>
         <div class="h2 mt-5">
         <u>Change profile photo</u>
