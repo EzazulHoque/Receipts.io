@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../Contexts";
 import Landing from "../components/Landing";
-import CustomerDashboard from "../components/CustomerDashboard";
+import CustomerDashboard from "../components/customerDashboard";
 import BusinessDashboard from "../components/BusinessDashboard";
 
 const Home = () => {
