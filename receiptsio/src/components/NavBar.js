@@ -121,9 +121,10 @@ const NavBar = ({ user, logout }) => {
                 <Nav.Link
                   style={{ color: "black", display: "inline-block" }}
                   eventKey="3"
-                  href="/Login"
                 >
-                  <button class="btn btn-outline-dark btn-lg">Login</button>
+                  <Link to="/Login">
+                    <button class="btn btn-outline-dark btn-lg">Login</button>
+                  </Link>
                 </Nav.Link>
                 <Nav.Link
                   style={{ color: "black", display: "inline-block" }}
