@@ -30,6 +30,7 @@ const Register = () => {
           const uid = response.user.uid;
           const data = {
             id: uid,
+            businessName,
             fullName,
             email,
             userType,
