@@ -70,6 +70,33 @@
 .register {
   /* position: absolute; */
   margin-left: 25%;
+  width: 460px;
+  padding: 15px;
+  height: 691px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.iPhone {
+  position: relative;
+  width: 414px;
+  height: 814px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.topBar {
+  width: 380px;
+  height: 126px;
+}
+
+.register {
+  /* position: absolute; */
+  margin-left: 25%;
   width: 360px;
   padding: 15px;
   height: 491px;
