@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { firebase } from "../firebase/config";
-import Select from "react-select";
 import SwitchComponent from "../components/SwitchComponent";
 
 const options = [
@@ -12,7 +11,7 @@ const options = [
 
 const Register = () => {
   const [userType, setUserType] = useState("Customer");
-  const [businessName, setBusinessName] = useState("");
+  const [businessName, setBusinessName] = useState(null);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,6 +32,7 @@ const Register = () => {
             id: uid,
             fullName,
             email,
+            userType,
           };
           const usersRef = firebase.firestore().collection("users");
           usersRef
@@ -68,8 +68,15 @@ const Register = () => {
                   <div class="h4" style={{ float: "left" }}>
                     Business Name
                   </div>
-                  <br />
-                  <Select options={options} />
+                  <select
+                    class="browser-default custom-select"
+                    value={businessName}
+                    onChange={(event) => setBusinessName(event.target.value)}
+                  >
+                    {options.map((option) => (
+                      <option value={option.value}>{option.label}</option>
+                    ))}
+                  </select>
                 </div>
               </div>
             )}

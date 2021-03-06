@@ -55,25 +55,6 @@ const Login = ({ setUser }) => {
   } else {
     return (
       <div>
-        {/* <form>
-          <label>
-            Email:
-            <br />
-            <input type="text" value={email} onChange={handleEmailChange} />
-          </label>
-          <br />
-          <label>
-            Password:
-            <br />
-            <input
-              type="text"
-              value={password}
-              onChange={handlePasswordChange}
-            />
-          </label>
-          <br />
-          <button onClick={handleLogin}>Login</button>
-        </form> */}
         <div class="container pad-10">
           <div class="h1" style={{ marginLeft: "25%" }}>
             Login

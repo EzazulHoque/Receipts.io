@@ -4,8 +4,14 @@ import Switch from "react-switch";
 const SwitchComponent = ({ userType, setUserType }) => {
   const [checked, setChecked] = useState(false);
   return (
-    <div style={{ display: "flex", alignItems: "center" }}>
-      Customer
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
+      <span>Customer</span>
       <Switch
         onChange={() => {
           setChecked(!checked);
@@ -24,7 +30,7 @@ const SwitchComponent = ({ userType, setUserType }) => {
         height={20}
         width={48}
       />
-      Business Personnel
+      <span>Business Personnel</span>
     </div>
   );
 };
