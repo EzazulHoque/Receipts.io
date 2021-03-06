@@ -3,7 +3,7 @@ import React from "react";
 const Receipt = ({ receipt, setSelectedReceipt, items }) => {
   return (
     <div>
-    {/* This the original cafe one */}
+      {/* This the original cafe one */}
       <div class="bigRcp mt-5">
         <div class="mt-5">
           <h1>{receipt.businessName}</h1>
