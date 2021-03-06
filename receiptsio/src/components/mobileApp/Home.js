@@ -1,77 +1,103 @@
 import React, { useState, useEffect } from "react";
 import ReceiptPreview from "./ReceiptPreview";
+import Receipt from "./Receipt";
 import end from "../../pics/end.png";
-import wl from "../../pics/wl.png";
-import bc from "../../pics/bc.png";
-import ds from "../../pics/ds.png";
 import { firebase } from "../../firebase/config";
-
-const brunetti = {
-  logo: bc,
-  businessName: "Brunetti Carlton",
-  date: "05 Mar 2021",
-  transactionId: "B106",
-  total: 23,
-};
-
-const woolworths = {
-  logo: wl,
-  businessName: "Woolworths",
-  date: "04 Mar 2021",
-  transactionId: "83456",
-  total: 23.5,
-};
-
-const daiso = {
-  logo: ds,
-  businessName: "Daiso Japan",
-  date: "03 Mar 2021",
-  transactionId: "3049683456",
-  total: 14,
-};
 
 const Home = () => {
   const [demoReceipts, setDemoReceipts] = useState([]);
+  const [selectedReceipt, setSelectedReceipt] = useState(null);
+  const [allItems, setAllItems] = useState(null);
+  const [allLogos, setAllLogos] = useState(new Map());
+
   useEffect(() => {
-    const docRef = firebase
-      .firestore()
-      .collection("users")
-      .doc("ISglKE3x0QcfiOZPpxYI42C6Ujm2");
-    docRef.get().then((doc) => {
-      if (!doc.exists) {
-        alert("No such document");
-      } else {
-        const receiptIds = doc.data().receipts;
-        const receiptsRef = firebase.firestore().collection("receipts");
-        var receipts = [];
-        for (let i = 0; i < receiptIds.length; i++) {}
+    const func = async () => {
+      // get receipts associated with user Alan Cheng
+      const doc = await firebase
+        .firestore()
+        .collection("users")
+        .doc("ISglKE3x0QcfiOZPpxYI42C6Ujm2")
+        .get();
+      const receiptIds = doc.data().receipts;
+
+      var receipts = [];
+      var tempAllItems = new Map();
+      var tempAllLogos = new Map();
+      for (let i = 0; i < receiptIds.length; i++) {
+        const receiptDoc = await firebase
+          .firestore()
+          .collection("receipts")
+          .doc(receiptIds[i])
+          .get();
+        const receipt = receiptDoc.data();
+        receipts.push(receipt);
+        // get logo url for this receipt
+        const url = await firebase
+          .storage()
+          .ref()
+          .child(receipt.img)
+          .getDownloadURL();
+        tempAllLogos.set(receipt.transactionId, url);
+        // get items for this receipt
+        var tempItems = [];
+        for (let i = 0; i < receipt.items.length; i++) {
+          const itemDoc = await firebase
+            .firestore()
+            .collection("receiptItems")
+            .doc(receipt.items[i])
+            .get();
+          tempItems.push(itemDoc.data());
+        }
+        tempAllItems.set(receipt.transactionId, [...tempItems]);
       }
-    });
+      setDemoReceipts(receipts);
+      setAllItems(tempAllItems);
+      setAllLogos(tempAllLogos);
+    };
+    func();
   }, []);
 
-  return (
-    <div>
-      <div class="topBar mt-5">
-        <div class="h2 mt-5" style={{ float: "left", marginLeft: "5%" }}>
-          Hello Ezaz!
+  if (selectedReceipt) {
+    return (
+      <Receipt
+        receipt={selectedReceipt}
+        setSelectedReceipt={setSelectedReceipt}
+        items={allItems.get(selectedReceipt.transactionId)}
+      />
+    );
+  } else {
+    return (
+      <div>
+        <div class="topBar mt-5">
+          <div class="h2 mt-5" style={{ float: "left", marginLeft: "5%" }}>
+            Hello Ezaz!
+          </div>
+          <div
+            class="circle mt-4"
+            style={{ float: "right", marginRight: "5%" }}
+          >
+            <img src={end} style={{ width: "79px" }} />
+          </div>
         </div>
-        <div class="circle mt-4" style={{ float: "right", marginRight: "5%" }}>
-          <img src={end} style={{ width: "79px" }} />
+        <div class="h1 mt-5" style={{ marginRight: "35%" }}>
+          Dashboard
         </div>
-      </div>
-      <div class="h1 mt-5" style={{ marginRight: "35%" }}>
-        Dashboard
-      </div>
-      <div class="dash">
-        {/* This is where users will be able to scroll through receipts */}
+        <div class="dash">
+          {/* This is where users will be able to scroll through receipts */}
 
-        {/* Need another routung for the smaller receipts */}
-        {demoReceipts.map((receipt) => (
-          <ReceiptPreview receipt={receipt} />
-        ))}
+          {/* Need another routung for the smaller receipts */}
+          {demoReceipts.map((receipt) => (
+            <ReceiptPreview
+              key={receipt.transactionId}
+              logo={allLogos.get(receipt.transactionId)}
+              receipt={receipt}
+              setSelectedReceipt={setSelectedReceipt}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Home;
