@@ -3,7 +3,7 @@ import React from "react";
 const Demo = () => 
 <div>
     <div class="container pad-10">
-        <div align="center" class="h1 mt-1 mb-5">Demo Web Apps</div>
+        <div align="center" class="h1 mt-1 mb-5">Demo Apps</div>
         <div class="row">
             <div class="col">
                 <div class="demoAsk">

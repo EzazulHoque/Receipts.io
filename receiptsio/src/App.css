@@ -112,11 +112,54 @@ box-sizing: border-box;
 .dash{
   width: 380px;
 height: 393px;
-
+overflow-y: scroll;
 background: #FAFAFA;
 border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 25px;
+}
+
+/* Rwd */
+.rwd{
+  width: 380px;
+height: 164px;
+background: #FAFAFA;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 25px;
+}
+.rwdC{
+  width: 160px;
+height: 60px;
+background: #FAFAFA;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 25px;
+}
+
+.rwdr{
+  width: 380px;
+height: 128px;
+background: #FAFAFA;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 15px;
+}
+
+.smlRcp{
+  width: 360px;
+  height: 128px;
+  background: #FAFAFA;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.mon{
+  width: 60px;
+  border-radius: 5px;
+  background: #FAFAFA;
+  border: 1px solid #000000;
+  box-sizing: border-box;
 }
 
 .botNav{
