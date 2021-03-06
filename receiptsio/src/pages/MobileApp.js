@@ -1,5 +1,21 @@
 import React from "react";
 import end from '../pics/end.png';
+import hom from '../pics/homeButton.png';
+import rcp from '../pics/receiptButton.png';
+import rwd from '../pics/rewards.png';
+import act from '../pics/account.png';
+
+
+// Need these three routes that redirects to these pages
+// Rewards - mobileApp/Rewards
+// ReceiptLists - mobileApp/ReceiptsLists
+// Account - mobileApp/Account
+
+
+
+
+
+
 const MobileApp = () => 
 <div>
     <div class="container pad-10">
@@ -17,7 +33,20 @@ const MobileApp = () =>
                     {/* This is where users will be able to scroll through receipts */}
                     </div>
                     <div class="botNav">
-
+                        <div class="row">
+                            <div class="col">
+                            <img src={hom} style={{width:"48px", marginTop:"20%"}}/>
+                            </div>
+                            <div class="col">
+                            <img src={rcp} style={{width:"48px", marginTop:"20%"}}/>
+                            </div>
+                            <div class="col">
+                                <img src={rwd} style={{width:"48px", marginTop:"20%"}}/>
+                            </div>
+                            <div class="col">
+                            <img src={act} style={{width:"48px", marginTop:"20%"}}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
