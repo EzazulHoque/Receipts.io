@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
 import bc from "../../pics/bc.png";
 
 const brunetti = {
@@ -10,24 +9,22 @@ const brunetti = {
   total: 14.21,
 };
 
-const Receipt = () => {
-  console.log(brunetti.logo);
-  const transactionId = useParams();
+const Receipt = ({ receipt, setSelectedReceipt }) => {
   return (
     <div>
       <div class="bigRcp mt-5">
         <div class="mt-5">
-          <h1>{brunetti.businessName}</h1>
+          <h1>{receipt.businessName}</h1>
         </div>
         <div>
           <div class="row">
             <div class="col">
-              <div class="h6 mt-5">Receipt: {brunetti.transactionId}</div>
+              <div class="h6 mt-5">Receipt: {receipt.transactionId}</div>
               <div class="h6 mt-2">Table no: B2</div>
             </div>
             <div class="col">
               <div class="h6" style={{ marginTop: "44%" }}>
-                {brunetti.date}
+                {receipt.date}
               </div>
             </div>
           </div>
@@ -97,9 +94,12 @@ const Receipt = () => {
         </div>
       </div>
       <div class="mt-5">
-        <Link to="/mobileApp">
-          <button class="btn btn-outline-dark btn-lg">Back</button>
-        </Link>
+        <button
+          class="btn btn-outline-dark btn-lg"
+          onClick={() => setSelectedReceipt(null)}
+        >
+          Back
+        </button>
       </div>
     </div>
   );
