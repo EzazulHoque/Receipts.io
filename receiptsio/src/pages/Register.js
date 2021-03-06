@@ -57,7 +57,7 @@ const Register = () => {
   } else {
     return (
       <div>
-        <div class="container pad-10">
+        <div class="container pad-5">
           <div class="h1" style={{ marginLeft: "25%" }}>
             Register
           </div>
