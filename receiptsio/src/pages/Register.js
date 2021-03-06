@@ -5,6 +5,7 @@ import SwitchComponent from "../components/SwitchComponent";
 
 const Register = () => {
   const [userType, setUserType] = useState("Customer");
+  const [businessName, setBusinessName] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -53,7 +54,23 @@ const Register = () => {
             Register
           </div>
           <div align="center" class="register" style={{ padding: "5%" }}>
-            <SwitchComponent option1="Customer" option2="Business Personnel" />
+            <SwitchComponent userType={userType} setUserType={setUserType} />
+            {userType === "Business Personnel" && (
+              <div class="row mt-3">
+                <div align="center" class="col">
+                  <div class="h4" style={{ float: "left" }}>
+                    Business Name
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Full Name"
+                    type="text"
+                    value={businessName}
+                    onChange={(event) => setFullName(event.target.value)}
+                  />
+                </div>
+              </div>
+            )}
             <div class="row mt-3">
               <div align="center" class="col">
                 <div class="h4" style={{ float: "left" }}>

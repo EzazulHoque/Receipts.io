@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import Switch from "react-switch";
 
-const SwitchComponent = ({ option1, option2 }) => {
-  const [checked, setChecked] = useState(true);
+const SwitchComponent = ({ userType, setUserType }) => {
+  const [checked, setChecked] = useState(false);
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
-      {option1}
+      Customer
       <Switch
-        onChange={() => setChecked(!checked)}
+        onChange={() => {
+          setChecked(!checked);
+          userType === "Customer"
+            ? setUserType("Business Personnel")
+            : setUserType("Customer");
+        }}
         checked={checked}
         onColor="#86d3ff"
         onHandleColor="#2693e6"
@@ -19,7 +24,7 @@ const SwitchComponent = ({ option1, option2 }) => {
         height={20}
         width={48}
       />
-      {option2}
+      Business Personnel
     </div>
   );
 };
