@@ -4,14 +4,14 @@ import { firebase } from "../firebase/config";
 import SwitchComponent from "../components/SwitchComponent";
 
 const options = [
-  { value: "woolworths", label: "Woolworths" },
-  { value: "coles", label: "Coles" },
-  { value: "aldi", label: "ALDI" },
+  { value: "Woolworths", label: "Woolworths" },
+  { value: "Coles", label: "Coles" },
+  { value: "ALDI", label: "ALDI" },
 ];
 
 const Register = () => {
   const [userType, setUserType] = useState("Customer");
-  const [businessName, setBusinessName] = useState(null);
+  const [businessName, setBusinessName] = useState("Woolworths");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
