@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { firebase } from "../firebase/config";
+import SwitchComponent from "../components/SwitchComponent";
+
+const options = [
+  { value: "Woolworths", label: "Woolworths" },
+  { value: "Coles", label: "Coles" },
+  { value: "ALDI", label: "ALDI" },
+];
 
 const Register = () => {
+  const [userType, setUserType] = useState("Customer");
+  const [businessName, setBusinessName] = useState("Woolworths");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,8 +30,10 @@ const Register = () => {
           const uid = response.user.uid;
           const data = {
             id: uid,
+            businessName,
             fullName,
             email,
+            userType,
           };
           const usersRef = firebase.firestore().collection("users");
           usersRef
@@ -51,6 +62,25 @@ const Register = () => {
             Register
           </div>
           <div align="center" class="register" style={{ padding: "5%" }}>
+            <SwitchComponent userType={userType} setUserType={setUserType} />
+            {userType === "Business Personnel" && (
+              <div class="row mt-3">
+                <div align="center" class="col">
+                  <div class="h4" style={{ float: "left" }}>
+                    Business Name
+                  </div>
+                  <select
+                    class="browser-default custom-select"
+                    value={businessName}
+                    onChange={(event) => setBusinessName(event.target.value)}
+                  >
+                    {options.map((option) => (
+                      <option value={option.value}>{option.label}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+            )}
             <div class="row mt-3">
               <div align="center" class="col">
                 <div class="h4" style={{ float: "left" }}>

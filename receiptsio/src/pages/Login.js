@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { firebase } from "../firebase/config";
 import { Redirect } from "react-router-dom";
+import { UserContext } from "../Contexts";
 
 const Login = ({ setUser }) => {
+  const user = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [redirect, setRedirect] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -39,7 +40,6 @@ const Login = ({ setUser }) => {
             }
             const user = firestoreDocument.data();
             setUser(user);
-            setRedirect(true);
           })
           .catch((error) => {
             alert(error);
@@ -50,30 +50,13 @@ const Login = ({ setUser }) => {
       });
   };
 
-  if (redirect) {
-    return <Redirect to="/userDashboard" />;
+  if (user && user.userType === "Customer") {
+    return <Redirect to="/customerDashboard" />;
+  } else if (user && user.userType === "Business Personnel") {
+    return <Redirect to="/businessDashboard" />;
   } else {
     return (
       <div>
-        {/* <form>
-          <label>
-            Email:
-            <br />
-            <input type="text" value={email} onChange={handleEmailChange} />
-          </label>
-          <br />
-          <label>
-            Password:
-            <br />
-            <input
-              type="text"
-              value={password}
-              onChange={handlePasswordChange}
-            />
-          </label>
-          <br />
-          <button onClick={handleLogin}>Login</button>
-        </form> */}
         <div class="container pad-10">
           <div class="h1" style={{ marginLeft: "25%" }}>
             Login

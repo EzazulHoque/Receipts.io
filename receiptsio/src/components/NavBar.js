@@ -131,9 +131,12 @@ const NavBar = ({ logout }) => {
                 <Nav.Link
                   style={{ color: "black", display: "inline-block" }}
                   eventKey="3"
-                  href="/Register"
                 >
-                  <button class="btn btn-outline-dark btn-lg">Register</button>
+                  <Link to="/Register">
+                    <button class="btn btn-outline-dark btn-lg">
+                      Register
+                    </button>
+                  </Link>
                 </Nav.Link>
               </div>
             )}
