@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { UserContext } from "../Contexts";
 
-const NavBar = ({ user, logout }) => {
+const NavBar = ({ logout }) => {
+  const user = useContext(UserContext);
   const [show, setShow] = useState(false);
   const showDropdown = (e) => {
     setShow(!show);

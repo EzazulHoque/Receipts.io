@@ -51,7 +51,7 @@ const Login = ({ setUser }) => {
   };
 
   if (redirect) {
-    return <Redirect to="/user-home" />;
+    return <Redirect to="/userDashboard" />;
   } else {
     return (
       <div>

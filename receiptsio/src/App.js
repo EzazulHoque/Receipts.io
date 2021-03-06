@@ -9,9 +9,11 @@ import Demo from "./pages/Demo";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import UserHome from "./pages/UserHome";
+import UserHome from "./pages/UserDashboard";
 import Home from "./pages/Home";
 import MobileApp from "./pages/MobileApp";
+
+import { UserContext } from "./Contexts";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -29,35 +31,37 @@ function App() {
   };
 
   return (
-    <Router>
-      <NavBar user={user} logout={logout} />
-      <Switch>
-        <Route path="/pricing">
-          <Pricing />
-        </Route>
-        <Route path="/demo">
-          <Demo />
-        </Route>
-        <Route path="/about-us">
-          <AboutUs />
-        </Route>
-        <Route path="/login">
-          <Login setUser={setUser} />
-        </Route>
-        <Route path="/register">
-          <Register />
-        </Route>
-        <Route path="/mobileApp">
-          <MobileApp />
-        </Route>
-        <Route path="/user-home">
-          <UserHome />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+    <UserContext.Provider value={user}>
+      <Router>
+        <NavBar logout={logout} />
+        <Switch>
+          <Route path="/pricing">
+            <Pricing />
+          </Route>
+          <Route path="/demo">
+            <Demo />
+          </Route>
+          <Route path="/about-us">
+            <AboutUs />
+          </Route>
+          <Route path="/login">
+            <Login user={user} setUser={setUser} />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/mobileApp">
+            <MobileApp />
+          </Route>
+          <Route path="/userDashboard">
+            <UserHome />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
