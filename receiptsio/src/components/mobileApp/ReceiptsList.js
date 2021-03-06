@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { firebase } from "../../firebase/config";
 import Receipt from "./Receipt";
-import ReceiptPreview from "./ReceiptPreview";
+import ReceiptPreview from "../ReceiptPreview";
 
 const ReceiptsList = () => {
   const [demoReceipts, setDemoReceipts] = useState([]);
