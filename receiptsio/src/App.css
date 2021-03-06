@@ -1,169 +1,169 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.App{
+.App {
   /* background-color: #f3f3f3; */
 }
-.dropdown-toggle::after { 
-  content: none; 
-} 
+.dropdown-toggle::after {
+  content: none;
+}
 
-.pad-10{
+.pad-10 {
   padding: 10%;
 }
-.pad-5{
+.pad-5 {
   padding: 5%;
 }
 
-.secondSection{
+.secondSection {
   margin-top: 10%;
 }
 
-.thirdSection{
+.thirdSection {
   margin-top: 20%;
 }
 
-.fourthSection{
+.fourthSection {
   margin-top: 15%;
   background-color: #008031;
 }
 
-.fifthSection{
+.fifthSection {
   margin-top: 10%;
 }
 
-.pricing{
-position: absolute;
-width: 360px;
-padding: 15px;
-height: 621px;
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 20px;
+.pricing {
+  position: absolute;
+  width: 360px;
+  padding: 15px;
+  height: 621px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
-.demoAsk{
-position: absolute;
-width: 360px;
-padding: 15px;
-height: 321px;
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 20px;
+.demoAsk {
+  position: absolute;
+  width: 360px;
+  padding: 15px;
+  height: 321px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
-.login{
+.login {
   /* position: absolute; */
   margin-left: 25%;
   width: 360px;
   padding: 15px;
   height: 341px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
-  }
-
-  .register{
-    /* position: absolute; */
-    margin-left: 25%;
-    width: 360px;
-    padding: 15px;
-    height: 491px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 20px;
-    }
-
-    .iPhone{
-      position: relative;
-      width: 414px;
-      height: 814px;
-
-      background: #FFFFFF;
-      border: 1px solid #000000;
-      border-radius: 20px;
-    }
-
-    .topBar{
-width: 380px;
-height: 126px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 25px;
-    }
-    .circle{
-width: 79px;
-height: 75px;
-border-radius: 100%;
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
-
-/* background-image: url("./pics/end.png"); */
-    }
-
-.dash{
-  width: 380px;
-height: 393px;
-overflow-y: scroll;
-background: #FAFAFA;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 25px;
 }
 
-/* Rwd */
-.rwd{
-  width: 380px;
-height: 164px;
-background: #FAFAFA;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 25px;
-}
-.rwdC{
-  width: 160px;
-height: 60px;
-background: #FAFAFA;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 25px;
-}
-
-.rwdr{
-  width: 380px;
-height: 128px;
-background: #FAFAFA;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 15px;
-}
-
-.smlRcp{
+.register {
+  /* position: absolute; */
+  margin-left: 25%;
   width: 360px;
-  height: 128px;
-  background: #FAFAFA;
+  padding: 15px;
+  height: 491px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.iPhone {
+  position: relative;
+  width: 414px;
+  height: 814px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.topBar {
+  width: 380px;
+  height: 126px;
+
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 25px;
 }
-.mon{
+.circle {
+  width: 79px;
+  height: 75px;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* background-image: url("./pics/end.png"); */
+}
+
+.dash {
+  width: 380px;
+  height: 393px;
+  overflow-y: scroll;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* Rwd */
+.rwd {
+  width: 380px;
+  height: 164px;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.rwdC {
+  width: 160px;
+  height: 60px;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.rwdr {
+  width: 380px;
+  height: 128px;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.smlRcp {
+  width: 360px;
+  height: 128px;
+  background: #fafafa;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.mon {
   width: 60px;
   border-radius: 5px;
-  background: #FAFAFA;
+  background: #fafafa;
   border: 1px solid #000000;
   box-sizing: border-box;
 }
 
-.botNav{
-/* margin-top: 15%;  
+.botNav {
+  /* margin-top: 15%;  
 width: 380px;
 height: 65px;
 
@@ -171,11 +171,11 @@ background: #F3F6F9;
 border: 1px solid #000000;
 box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
 border-radius: 15px; */
-position: absolute;
-width: 413px;
-height: 0px;
-left: 0px;
-top: 734px;
+  position: absolute;
+  width: 413px;
+  height: 0px;
+  left: 0px;
+  top: 734px;
 
-border: 1px solid #000000;
+  border: 1px solid #000000;
 }
