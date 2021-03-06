@@ -1,0 +1,347 @@
+.mediaViewInfo {
+		--web-view-name: creative;
+		--web-view-id: creative;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+:root {
+    --web-view-ids: creative;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#creative {
+    position: absolute;
+    width: 428px;
+    height: 926px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: creative;
+    --web-view-id: creative;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#floral {
+    position: absolute;
+    width: 572px;
+    height: 925px;
+    left: -72px;
+    top: 1px;
+    overflow: visible;
+}
+#Rectangle_1 {
+    fill: rgba(245,245,245,1);
+}
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 428px;
+    height: 610px;
+    left: 0px;
+    top: 143px;
+}
+#TRANS_SHT_MNS2020003352 {
+    left: 24px;
+    top: 712px;
+    position: absolute;
+    overflow: visible;
+    width: 232px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.5px;
+    color: rgba(0,0,0,1);
+}
+#DATE_25022021_1440 {
+    left: 24px;
+    top: 685px;
+    position: absolute;
+    overflow: visible;
+    width: 273px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    color: rgba(0,0,0,1);
+}
+#Almond_croissant {
+    left: 24px;
+    top: 244px;
+    position: absolute;
+    overflow: visible;
+    width: 203px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Schoolbook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#QR_code {
+    position: absolute;
+    width: 131px;
+    height: 131px;
+    left: 149px;
+    top: 772px;
+    overflow: visible;
+}
+#ID520 {
+    left: 338px;
+    top: 251px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Total {
+    left: 24px;
+    top: 540px;
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Schoolbook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(0,0,0,1);
+}
+#ID1760 {
+    left: 306px;
+    top: 543px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#GST {
+    left: 30px;
+    top: 591px;
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Eftpos {
+    left: 30px;
+    top: 618px;
+    position: absolute;
+    overflow: visible;
+    width: 67px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID480 {
+    left: 329px;
+    top: 591px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID1760_s {
+    left: 318px;
+    top: 619px;
+    position: absolute;
+    overflow: visible;
+    width: 73px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Line_3 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_3 {
+    overflow: visible;
+    position: absolute;
+    width: 392px;
+    height: 2px;
+    left: 18px;
+    top: 581px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_5 {
+    fill: rgba(245,245,245,1);
+}
+.Rectangle_5 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 398px;
+    height: 114px;
+    left: 24px;
+    top: 99px;
+}
+#NoPath_-_Copy_5 {
+    position: absolute;
+    width: 256px;
+    height: 51px;
+    left: 86px;
+    top: 122px;
+    overflow: visible;
+}
+#Line_4 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_4 {
+    overflow: visible;
+    position: absolute;
+    width: 374px;
+    height: 1px;
+    left: 24px;
+    top: 274px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Long_machiato {
+    left: 24px;
+    top: 360px;
+    position: absolute;
+    overflow: visible;
+    width: 172px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Schoolbook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#ID600 {
+    left: 338px;
+    top: 367px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Line_5 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_5 {
+    overflow: visible;
+    position: absolute;
+    width: 374px;
+    height: 1px;
+    left: 24px;
+    top: 390px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Chocolate_clair {
+    left: 24px;
+    top: 302px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Schoolbook;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#ID640 {
+    left: 338px;
+    top: 309px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Line_6 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_6 {
+    overflow: visible;
+    position: absolute;
+    width: 374px;
+    height: 1px;
+    left: 24px;
+    top: 332px;
+    transform: matrix(1,0,0,1,0,0);
+}
