@@ -75,28 +75,65 @@ const NavBar = ({ user, logout }) => {
               </div>
             </NavDropdown>
 
-            <Nav.Link><Link style={{textDecoration:"none", color:"inherit"}} to="/pricing">Pricing</Link></Nav.Link>
+            <Nav.Link>
+              <Link
+                style={{ textDecoration: "none", color: "inherit" }}
+                to="/pricing"
+              >
+                Pricing
+              </Link>
+            </Nav.Link>
             {/* <Link to="/pricing">Pricing</Link> */}
-            <Nav.Link> <Link style={{textDecoration:"none", color:"inherit"}} to="/demo">Demo</Link></Nav.Link>
-            <Nav.Link><Link style={{textDecoration:"none", color:"inherit"}} to="/about-us">About Us</Link></Nav.Link>
+            <Nav.Link>
+              {" "}
+              <Link
+                style={{ textDecoration: "none", color: "inherit" }}
+                to="/demo"
+              >
+                Demo
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                style={{ textDecoration: "none", color: "inherit" }}
+                to="/about-us"
+              >
+                About Us
+              </Link>
+            </Nav.Link>
             {/* <Link to="/demo">Demo</Link>
             <Link to="/about-us">About Us</Link> */}
           </Nav>
           <Nav style={{ fontSize: "20px" }}>
             {user ? (
               <Nav.Link style={{ color: "black" }} eventKey="3">
-                <button class="btn btn-outline-success btn-lg" onClick={logout}>
-                  Logout
-                </button>
+                <Link to="/">
+                  <button
+                    class="btn btn-outline-success btn-lg"
+                    onClick={logout}
+                  >
+                    Logout
+                  </button>
+                </Link>
               </Nav.Link>
             ) : (
-              <Nav.Link style={{ color: "black" }} eventKey="3" href="/Login">
-                <button class="btn btn-outline-dark btn-lg">Login</button>
-              </Nav.Link>
+              <div>
+                <Nav.Link
+                  style={{ color: "black", display: "inline-block" }}
+                  eventKey="3"
+                  href="/Login"
+                >
+                  <button class="btn btn-outline-dark btn-lg">Login</button>
+                </Nav.Link>
+                <Nav.Link
+                  style={{ color: "black", display: "inline-block" }}
+                  eventKey="3"
+                  href="/Register"
+                >
+                  <button class="btn btn-outline-dark btn-lg">Register</button>
+                </Nav.Link>
+              </div>
             )}
-            <Nav.Link style={{ color: "black" }} eventKey="3" href="/Register">
-                <button class="btn btn-outline-dark btn-lg">Register</button>
-              </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

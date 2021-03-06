@@ -17,7 +17,6 @@ function App() {
   const [user, setUser] = useState(null);
 
   const logout = (event) => {
-    event.preventDefault();
     firebase
       .auth()
       .signOut()
