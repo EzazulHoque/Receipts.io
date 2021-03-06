@@ -1,0 +1,424 @@
+.mediaViewInfo {
+    --web-view-name: creative;
+    --web-view-id: creative;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: creative;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#creative {
+    position: absolute;
+    width: 428px;
+    height: 926px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: creative;
+    --web-view-id: creative;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+    opacity: 0.3;
+    fill: rgba(255,245,228,1);
+}
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 428px;
+    height: 926px;
+    left: 0px;
+    top: 0px;
+}
+#TRANS_SHT_MNS2020003352 {
+    left: 27px;
+    top: 189px;
+    position: absolute;
+    overflow: visible;
+    width: 232px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.5px;
+    color: rgba(0,0,0,1);
+}
+#DATE_25022021_1440 {
+    left: 27px;
+    top: 161px;
+    position: absolute;
+    overflow: visible;
+    width: 273px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    color: rgba(0,0,0,1);
+}
+#Rectangle_2 {
+    fill: rgba(255,230,230,1);
+}
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 363px;
+    height: 52px;
+    left: 28px;
+    top: 249px;
+}
+#R_Passionfruit_Orange__Grapefr {
+    left: 28px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 278px;
+    white-space: nowrap;
+    line-height: 25px;
+    margin-top: -2px;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(0,0,0,1);
+}
+#QR_code {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 141px;
+    top: 699px;
+    overflow: visible;
+}
+#NoPath_-_Copy_3 {
+    position: absolute;
+    width: 395px;
+    height: 144px;
+    left: 17px;
+    top: 8px;
+    overflow: visible;
+}
+#ID590 {
+    left: 329px;
+    top: 261px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID000 {
+    left: 329px;
+    top: 307px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID000_p {
+    left: 329px;
+    top: 330px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID070 {
+    left: 329px;
+    top: 353px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Rectangle_3 {
+    fill: rgba(255,230,230,1);
+}
+.Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+    width: 363px;
+    height: 28px;
+    left: 28px;
+    top: 419px;
+}
+#L_Tiger_Milk_Tea {
+    left: 34px;
+    top: 419px;
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(0,0,0,1);
+}
+#ID660 {
+    left: 329px;
+    top: 420px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID070_u {
+    left: 329px;
+    top: 451px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Line_1 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_1 {
+    overflow: visible;
+    position: absolute;
+    width: 392px;
+    height: 2px;
+    left: 17.5px;
+    top: 230.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_2 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_2 {
+    overflow: visible;
+    position: absolute;
+    width: 392px;
+    height: 2px;
+    left: 18px;
+    top: 492.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_30_sugar {
+    left: 30px;
+    top: 307px;
+    position: absolute;
+    overflow: visible;
+    width: 122px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#_No_ice {
+    left: 28px;
+    top: 330px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#_Pearls {
+    left: 28px;
+    top: 353px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#_Pearls_ {
+    left: 30px;
+    top: 451px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Rectangle_4 {
+    fill: rgba(0,0,0,1);
+}
+.Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    width: 224px;
+    height: 51px;
+    left: 27px;
+    top: 516px;
+}
+#Total {
+    left: 44px;
+    top: 526px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 1px;
+}
+#ID1390 {
+    left: 302px;
+    top: 526px;
+    position: absolute;
+    overflow: visible;
+    width: 83px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#GST {
+    left: 30px;
+    top: 575px;
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Eftpos {
+    left: 30px;
+    top: 603px;
+    position: absolute;
+    overflow: visible;
+    width: 67px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID370 {
+    left: 329px;
+    top: 575px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#ID1390_ {
+    left: 318px;
+    top: 603px;
+    position: absolute;
+    overflow: visible;
+    width: 67px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Line_3 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_3 {
+    overflow: visible;
+    position: absolute;
+    width: 392px;
+    height: 2px;
+    left: 18px;
+    top: 649.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
