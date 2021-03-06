@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import fon from "../pics/fon.png";
 import hiw from "../pics/HIW.png";
 
@@ -19,9 +20,9 @@ const Landing = () => {
               minutes - try now for free!
             </div>
             <div align="center" class="mt-5">
-              <button type="button" class="btn btn-success btn-lg">
-                Create Receipt
-              </button>
+            <Link to="/Login">
+                    <button class="btn btn-success btn-lg">Create Receipt</button>
+                  </Link>
             </div>
           </div>
         </div>
@@ -72,10 +73,10 @@ const Landing = () => {
             {/* <img src={hiw} style={{width:"50%"}}/> */}
             <div class="row">
               <div class="col">
-                <div class="h1">It is really easy to use.</div>
-                <div class="h3 mt-5">It is really easy to use.</div>
-                <div class="h3 mt-5">1. Trust me it is easy to use.</div>
-                <div class="h3 mt-5">2. For real it is easy to use.</div>
+                <div class="h2 mt-4">Just scan the QR code from the POS Software and collect your automated receipt immediately.</div>
+                <div class="h3 mt-5">API allows the POS Software to generate receipts.</div>
+                <div class="h3 mt-5">Customers without the mobile app can still scan the Qr code 
+                and print the receipts</div>
               </div>
               <div class="col">
                 <img src={hiw} style={{ width: "100%" }} />
@@ -103,14 +104,13 @@ const Landing = () => {
       <div class="fifthSection">
         <div class="container">
           <div class="row">
-            <div class="col" style={{ padding: "3%" }}>
+            <div class="col mb-5">
               <div class="h1">
-                Let's start reducing the cutting down of trees and the excess
-                consumption of oil by using digital receipts
+                Let's start moving to a greener environment by changing the way we use receipts.
               </div>
             </div>
             <div class="col">
-              <div class="h1" style={{ marginTop: "20%" }}>
+              <div class="h1" align="right" style={{ marginTop: "10%" }}>
                 Get Started for free.
               </div>
             </div>
