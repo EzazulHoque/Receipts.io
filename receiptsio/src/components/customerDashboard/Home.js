@@ -93,7 +93,7 @@ const Home = () => {
                 setSelectedReceipt={setSelectedReceipt}
               />
             </div>
-            <div className="col">
+            <div className="col float-right">
               <ReceiptPreview
                 logo={allLogos.get(demoReceipts[2].transactionId)}
                 receipt={demoReceipts[2]}

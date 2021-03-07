@@ -23,16 +23,22 @@ const CustomerDashboard = () => {
               <Home />
             </Route>
           </Switch>
-          <div class="row mt-4 botNav">
+          <div class="row mt-4 align-bottom">
             {/* Need to conver the divs below like the mobile app demo */}
             <div align="right" class="col">
-              <Link to={`${match.url}`}>Home</Link>
+              <Link className="text-dark" to={`${match.url}`}>
+                Home
+              </Link>
             </div>
             <div align="center" class="col">
-              <Link to={`${match.url}receipts-list`}>Receipts List</Link>
+              <Link className="text-dark" to={`${match.url}receipts-list`}>
+                Receipts List
+              </Link>
             </div>
             <div align="left" class="col">
-              <Link to={`${match.url}settings`}>Settings</Link>
+              <Link className="text-dark" to={`${match.url}settings`}>
+                Settings
+              </Link>
             </div>
           </div>
         </div>
