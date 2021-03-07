@@ -2,29 +2,24 @@ import React from "react";
 
 const ReceiptPreview = ({ logo, receipt, setSelectedReceipt }) => {
   return (
-    <div class="smlRcp mt-4" onClick={() => setSelectedReceipt(receipt)}>
-      <div class="row mt-3">
-        <div class="col">
+    <div class="smlRcp m-4 p-3" onClick={() => setSelectedReceipt(receipt)}>
+      <div class="row d-flex align-items-center">
+        <div class="col align-middle">
           <img
             src={logo}
             alt="logo"
             style={{
               width: "92px",
-              marginLeft: "20%",
-              marginTop: "25%",
-              borderRadius: "20px",
             }}
           />
         </div>
-        <div class="col" style={{ float: "left" }}>
+        <div class="col align-middle float-left">
           <div class="h6">{receipt.businessName}</div>
           <div class="h6">{receipt.date}</div>
           <div class="h6">{receipt.uid}</div>
         </div>
         <div class="col">
-          <div class="mon h5" style={{ marginTop: "30%" }}>
-            ${receipt.total}
-          </div>
+          <div class="border h5 py-1 px-2 bg-white">${receipt.total}</div>
         </div>
       </div>
     </div>

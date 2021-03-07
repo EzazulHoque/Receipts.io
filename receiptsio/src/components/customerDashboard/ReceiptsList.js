@@ -58,8 +58,8 @@ const ReceiptsList = () => {
   }, []);
 
   return (
-    <div>
-      <div class="input-group mb-3">
+    <div class="dash-main">
+      <div class="input-group my-5">
         <input
           type="text"
           class="form-control"
@@ -73,9 +73,7 @@ const ReceiptsList = () => {
           </span>
         </div>
       </div>
-      <div class="h2 mt-4" style={{ float: "left" }}>
-        March 2021
-      </div>
+      <div class="row h2 my-4 mx-2">March 2021</div>
       <div className="row">
         <div className="col">
           {demoReceipts.map((receipt) => (

@@ -61,7 +61,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div class="dash-main">
       <div class="userDashTop mt-5" style={{ marginLeft: "10%" }}>
         <div align="center" class="h1 mt-5">
           Hello <strong style={{ color: "green" }}>{user.fullName}</strong>
@@ -93,7 +93,7 @@ const Home = () => {
                 setSelectedReceipt={setSelectedReceipt}
               />
             </div>
-            <div className="col">
+            <div className="col float-right">
               <ReceiptPreview
                 logo={allLogos.get(demoReceipts[2].transactionId)}
                 receipt={demoReceipts[2]}
