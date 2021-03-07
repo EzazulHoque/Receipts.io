@@ -75,7 +75,7 @@ const Landing = () => {
                 <div class="h2 mt-4">Just scan the QR code from the POS Software and collect your automated receipt immediately.</div>
                 <div class="h3 mt-5">API allows the POS Software to generate receipts.</div>
                 <div class="h3 mt-5">Customers without the mobile app can still scan the Qr code 
-                and print the receipts</div>
+                and print the receipts.</div>
               </div>
               <div class="col">
                 <img src={hiw} style={{ width: "100%" }} />

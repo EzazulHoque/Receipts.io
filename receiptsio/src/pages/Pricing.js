@@ -52,7 +52,7 @@ const Pricing = () =>
                             <div class="row">
                                 <div class="col">
                                     <div class="h5 mt-3">
-                                    3 months
+                                    1 months
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ const Pricing = () =>
                             <div class="row">
                                 <div class="col">
                                     <div class="h5 mt-3">
-                                    Customer data analytics for 500 customers.
+                                    Customer data analytics for 500 customers + export data to Xero.
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@ const Pricing = () =>
                             <div class="row">
                                 <div class="col">
                                     <div class="h5 mt-3">
-                                    Customer data analytics for 1000 customers.
+                                    Customer data analytics for 1000 customers + export data to Xero.
                                     </div>
                                 </div>
                             </div>
