@@ -61,7 +61,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div class="dash-main">
       <div class="userDashTop mt-5" style={{ marginLeft: "10%" }}>
         <div align="center" class="h1 mt-5">
           Hello <strong style={{ color: "green" }}>{user.fullName}</strong>

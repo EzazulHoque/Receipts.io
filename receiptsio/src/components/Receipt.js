@@ -85,7 +85,7 @@ const Receipt = ({ receipt, setSelectedReceipt, items }) => {
     return (
       <div>
         {/* Bakery Shop */}
-        <div class="bigRcp">
+        <div class="bigRcp mt-5">
           <CloseButton setSelectedReceipt={setSelectedReceipt} />
           {/* Top Header */}
           {/* TopBar */}
