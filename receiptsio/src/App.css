@@ -174,15 +174,15 @@
 }
 
 .smlRcp {
-  width: 360px;
-  height: 128px;
+  width: 340px;
+  height: auto;
   background: #fafafa;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 25px;
 }
 
-.bigRcp{
+.bigRcp {
   width: 360px;
   height: 528px;
   background: #fafafa;
@@ -218,12 +218,12 @@ border-radius: 15px; */
 .line {
   top: 15px;
   width: 90%;
-  opacity: .5;
+  opacity: 0.5;
   height: 1px;
   background: #000000;
 }
 
-.userDash{
+.userDash {
   width: inherit;
   height: 800px;
   /* overflow-y: scroll; */
@@ -232,7 +232,7 @@ border-radius: 15px; */
   box-sizing: border-box;
   border-radius: 25px;
 }
-.cusDash{
+.cusDash {
   width: inherit;
   height: 800px;
   /* overflow-y: scroll; */
@@ -241,7 +241,7 @@ border-radius: 15px; */
   box-sizing: border-box;
   border-radius: 25px;
 }
-.cusDashTop{
+.cusDashTop {
   width: 1100px;
   height: 100px;
   background: #ffffff;
@@ -250,16 +250,16 @@ border-radius: 15px; */
   border-radius: 25px;
 }
 
-.userDashTop{
-    width: 880px;
-    height: 126px;
-    background: #ffffff;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 25px;
+.userDashTop {
+  width: 880px;
+  height: 126px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 
-.insideDashc{
+.insideDashc {
   width: 330px;
   height: 240px;
   /* overflow-y: scroll; */
@@ -269,7 +269,7 @@ border-radius: 15px; */
   border-radius: 25px;
 }
 
-.insideDashcbig{
+.insideDashcbig {
   width: 1065px;
   height: 340px;
   /* overflow-y: scroll; */
@@ -279,7 +279,7 @@ border-radius: 15px; */
   border-radius: 25px;
 }
 
-.insideDash{
+.insideDash {
   width: 880px;
   height: 440px;
   /* overflow-y: scroll; */
@@ -289,9 +289,7 @@ border-radius: 15px; */
   border-radius: 25px;
 }
 
-
-
-.genTop{
+.genTop {
   width: 260px;
   height: 58px;
   background: #fafafa;
@@ -300,7 +298,7 @@ border-radius: 15px; */
   border-radius: 15px;
 }
 
-.genTopB{
+.genTopB {
   width: 260px;
   height: 88px;
   background: #fafafa;
